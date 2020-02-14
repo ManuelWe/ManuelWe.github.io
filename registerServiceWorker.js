@@ -1,4 +1,4 @@
-importScripts("/precache-manifest.b5d39b6e7dbdb3c80c5f574f32735f3b.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/precache-manifest.2ada050ef0d9120532d69bdfecd11fe2.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 const cacheName = 'secondVersion';
 const self = this;
