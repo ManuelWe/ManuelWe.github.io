@@ -13,12 +13,13 @@
 
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
+workbox.setConfig({ debug: true });
+
 importScripts(
   "/precache-manifest.bb1dd3419f1f8b67314e506050d2ecde.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "kundeninformationssystem"});
-workbox.setConfig({ debug: true });
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
