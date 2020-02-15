@@ -1,4 +1,4 @@
-importScripts("/precache-manifest.78ced324574fe2fe34c3ad5844bec8d8.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/precache-manifest.39c1fb02c9d0053a14900c6cb4c64df4.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /* eslint-disable */
 /**
@@ -13,8 +13,6 @@ importScripts("/precache-manifest.78ced324574fe2fe34c3ad5844bec8d8.js", "https:/
  * and re-run your build process.
  * See https://goo.gl/2aRDsh
  */
-
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
 
 workbox.core.setCacheNameDetails({ prefix: 'kundeninformationssystem' });
 
