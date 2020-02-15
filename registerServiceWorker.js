@@ -1,7 +1,7 @@
-importScripts("/precache-manifest.2ada050ef0d9120532d69bdfecd11fe2.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/precache-manifest.107e8e510a5246449ca1343877622d20.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
+/* eslint-disable */
 const cacheName = 'secondVersion';
-const self = this;
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
