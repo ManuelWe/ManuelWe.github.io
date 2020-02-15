@@ -33,9 +33,9 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute(/\.(jpg|png|jpeg)$/, new workbox.strategies.StaleWhileRevalidate({ "cacheName":"images", plugins: [] }), 'GET');
-registerRoute(
+workbox.routing.registerRoute(
   /\.(?:png|gif|jpg|jpeg|webp|svg)$/,
-  new CacheFirst({
+  new workbox.strategies.CacheFirst({
     cacheName: 'images1',
     plugins: [
       new ExpirationPlugin({
