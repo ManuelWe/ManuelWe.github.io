@@ -1,6 +1,3 @@
-importScripts("/precache-manifest.ba3acd376e9c33b6a4a83051291132a3.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
-
-/* eslint-disable */
 /**
  * Welcome to your Workbox-powered service worker!
  *
@@ -14,7 +11,11 @@ importScripts("/precache-manifest.ba3acd376e9c33b6a4a83051291132a3.js", "https:/
  * See https://goo.gl/2aRDsh
  */
 
-workbox.setConfig({ debug: true });
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+
+importScripts(
+  "/precache-manifest.ba3acd376e9c33b6a4a83051291132a3.js"
+);
 
 workbox.core.setCacheNameDetails({prefix: "kundeninformationssystem"});
 
@@ -31,5 +32,3 @@ self.addEventListener('message', (event) => {
  */
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
-
-workbox.routing.registerRoute(new RegExp('https:\/\/images.ctfassets.net\/kfibk3xh1vwb\/B5SY5CYcZxbmlZWZ0XCcJ\/efed3c1a56081b66d4a9fcc469c8d5f2\/*'), new workbox.strategies.CacheFirst({ "cacheName":"images", plugins: [] }), 'GET');
