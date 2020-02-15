@@ -1,7 +1,7 @@
-importScripts("/precache-manifest.acd4d1896e236e27b4e6899b4a4781b6.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/precache-manifest.65bb4ecccaa4a60c49e7ca779150050f.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /* eslint-disable */
-if (typeof importScripts === 'function') {
+if (typeof workbox !== 'undefined') {
 /**
  * Welcome to your Workbox-powered service worker 4!
  *
