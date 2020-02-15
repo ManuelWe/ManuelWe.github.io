@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.578abbfc06fb6995bd4658b3407120c0.js"
+  "/precache-manifest.bb1dd3419f1f8b67314e506050d2ecde.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "kundeninformationssystem"});
@@ -33,4 +33,4 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerRoute(/\.(?:jpg|png|jpeg)$/, new workbox.strategies.CacheFirst({ "cacheName":"images", plugins: [] }), 'GET');
+workbox.routing.registerRoute(/\.(jpg|png|jpeg)$/, new workbox.strategies.StaleWhileRevalidate({ "cacheName":"images", plugins: [] }), 'GET');
