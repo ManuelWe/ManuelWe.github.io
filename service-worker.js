@@ -18,7 +18,7 @@ importScripts(
 );
 
 workbox.core.setCacheNameDetails({prefix: "kundeninformationssystem"});
-workbox.core.setLogLevel(workbox.core.LOG_LEVELS.debug)
+workbox.setConfig({ debug: true });
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
