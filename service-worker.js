@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.ba3acd376e9c33b6a4a83051291132a3.js"
+  "/precache-manifest.159de9ba40b60723c8533aca33255f07.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "kundeninformationssystem"});
