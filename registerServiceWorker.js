@@ -1,7 +1,7 @@
-importScripts("/precache-manifest.65bb4ecccaa4a60c49e7ca779150050f.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/precache-manifest.3bae45664a292e141d54ae2049eb3389.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /* eslint-disable */
-if (typeof workbox !== 'undefined') {
+
 /**
  * Welcome to your Workbox-powered service worker 4!
  *
@@ -30,4 +30,4 @@ self.addEventListener('message', (event) => {
  */
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
-}
+
