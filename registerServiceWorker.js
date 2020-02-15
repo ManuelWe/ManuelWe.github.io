@@ -1,8 +1,8 @@
-importScripts("/precache-manifest.50019171816c821726ae378862298b11.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/precache-manifest.bcd94ba2066afe123b708fbd00b80a07.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /* eslint-disable */
 /**
- * Welcome to your Workbox-powered service worker 3!
+ * Welcome to your Workbox-powered service worker 4!
  *
  * You'll need to register this file in your web app and you should
  * disable HTTP caching for this file too.
