@@ -1,3 +1,6 @@
+importScripts("/precache-manifest.9399f922973c7983a14f6f7ef71ff714.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+
+/* eslint-disable */
 /**
  * Welcome to your Workbox-powered service worker!
  *
@@ -11,13 +14,7 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
-
 workbox.setConfig({ debug: true });
-
-importScripts(
-  "/precache-manifest.775aa0e3230fca192e125004f38cacf6.js"
-);
 
 workbox.core.setCacheNameDetails({prefix: "kundeninformationssystem"});
 
@@ -36,3 +33,4 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute(/\.(jpg|png|jpeg)$/, new workbox.strategies.StaleWhileRevalidate({ "cacheName":"images", plugins: [] }), 'GET');
+
