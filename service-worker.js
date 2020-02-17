@@ -32,4 +32,4 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerRoute(new RegExp('https:\/\/images.ctfassets.net\/kfibk3xh1vwb\/B5SY5CYcZxbmlZWZ0XCcJ\/efed3c1a56081b66d4a9fcc469c8d5f2\/*'), new workbox.strategies.CacheFirst({ "cacheName": "images", plugins: [] }), 'GET');
+workbox.routing.registerRoute('https://images.ctfassets.net/kfibk3xh1vwb/*', new workbox.strategies.CacheFirst({ "cacheName": "images", plugins: [] }), 'GET');
