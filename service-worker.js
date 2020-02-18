@@ -1,5 +1,8 @@
+importScripts("/precache-manifest.7d4d1c7a689f41ba8161f3e9983b7359.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+
+/* eslint-disable */
 /**
- * Welcome to your Workbox-powered service worker!
+ * Welcome to your Workbox-powered service worker1!
  *
  * You'll need to register this file in your web app and you should
  * disable HTTP caching for this file too.
@@ -11,13 +14,9 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+workbox.setConfig({ debug: true });
 
-importScripts(
-  "/precache-manifest.42217b064197f5acb74d335cff0e0bff.js"
-);
-
-workbox.core.setCacheNameDetails({prefix: "kundeninformationssystem"});
+workbox.core.setCacheNameDetails({ prefix: "kundeninformationssystem" });
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
@@ -32,3 +31,5 @@ self.addEventListener('message', (event) => {
  */
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+
+workbox.routing.registerRoute(new RegExp('https:\/\/images.ctfassets.net\/kfibk3xh1vwb\/*'), new workbox.strategies.CacheFirst({ "cacheName": "images", plugins: [] }), 'GET');
