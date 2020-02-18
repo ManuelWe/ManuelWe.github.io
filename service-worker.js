@@ -34,3 +34,4 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute(new RegExp('https:\/\/images.ctfassets.net\/kfibk3xh1vwb\/*'), new workbox.strategies.CacheFirst({ "cacheName": "images", plugins: [] }), 'GET');
 workbox.routing.registerRoute('https://cdn.contentful.com/spaces/kfibk3xh1vwb/entries?content_type=produkt', new workbox.strategies.CacheFirst({ "cacheName": "products", plugins: [] }), 'GET');
+workbox.routing.registerRoute('https://cdn.contentful.com/spaces/kfibk3xh1vwb/assets', new workbox.strategies.CacheFirst({ "cacheName": "assets", plugins: [] }), 'GET');
