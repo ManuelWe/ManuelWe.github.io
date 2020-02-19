@@ -1,4 +1,4 @@
-importScripts("/precache-manifest.584dc72a4c0c2ccd5fceff10a8be2275.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/precache-manifest.dcc8f5bab48ee680b7d453e27a64aab2.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /* eslint-disable */
 /**
@@ -14,7 +14,7 @@ importScripts("/precache-manifest.584dc72a4c0c2ccd5fceff10a8be2275.js", "https:/
  * See https://goo.gl/2aRDsh
  */
 
-workbox.setConfig({ debug: true });
+workbox.setConfig({ debug: true }); //TODO entfernen
 
 workbox.core.setCacheNameDetails({ prefix: "kundeninformationssystem" });
 
