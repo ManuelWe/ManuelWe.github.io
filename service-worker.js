@@ -2,7 +2,7 @@ importScripts("/precache-manifest.8d67ba74195cfbd1654fd78b5b88b679.js", "https:/
 
 /* eslint-disable */
 /**
- * Welcome to your Workbox-powered service worker1!
+ * Welcome to your Workbox-powered service worker3!
  *
  * You'll need to register this file in your web app and you should
  * disable HTTP caching for this file too.
