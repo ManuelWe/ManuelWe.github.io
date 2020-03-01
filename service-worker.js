@@ -2,7 +2,7 @@ importScripts("/precache-manifest.7ca2db18fb74e03ff29a52f5d6027a6f.js", "https:/
 
 /* eslint-disable */
 /**
- * Welcome to your Workbox-powered service worker1!
+ * Welcome to your Workbox-powered service worker2!
  */
 
 workbox.setConfig({ debug: true }); //TODO entfernen
