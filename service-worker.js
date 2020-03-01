@@ -1,8 +1,8 @@
-importScripts("/precache-manifest.7c20c1d32e035802e8b7aa6b1daf6527.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/precache-manifest.8435c0f003a7beb78648395bc79f94ac.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /* eslint-disable */
 /**
- * Welcome to your Workbox-powered service worker3!
+ * Welcome to your Workbox-powered service worker1!
  */
 
 workbox.setConfig({ debug: true }); //TODO entfernen
