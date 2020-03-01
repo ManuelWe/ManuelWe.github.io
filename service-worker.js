@@ -1,8 +1,8 @@
-importScripts("/precache-manifest.7ca2db18fb74e03ff29a52f5d6027a6f.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/precache-manifest.7c20c1d32e035802e8b7aa6b1daf6527.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /* eslint-disable */
 /**
- * Welcome to your Workbox-powered service worker2!
+ * Welcome to your Workbox-powered service worker1!
  */
 
 workbox.setConfig({ debug: true }); //TODO entfernen
@@ -14,8 +14,6 @@ self.addEventListener('message', (event) => {
     self.skipWaiting();
   }
 });
-
-workbox.core.clientsClaim();
 
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
