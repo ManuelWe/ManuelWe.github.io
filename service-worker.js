@@ -2,16 +2,7 @@ importScripts("/precache-manifest.8d67ba74195cfbd1654fd78b5b88b679.js", "https:/
 
 /* eslint-disable */
 /**
- * Welcome to your Workbox-powered service worker3!
- *
- * You'll need to register this file in your web app and you should
- * disable HTTP caching for this file too.
- * See https://goo.gl/nhQhGp
- *
- * The rest of the code is auto-generated. Please don't update this file
- * directly; instead, make changes to your Workbox build configuration
- * and re-run your build process.
- * See https://goo.gl/2aRDsh
+ * Welcome to your Workbox-powered service worker1!
  */
 
 workbox.setConfig({ debug: true }); //TODO entfernen
@@ -24,11 +15,8 @@ self.addEventListener('message', (event) => {
   }
 });
 
-/**
- * The workboxSW.precacheAndRoute() method efficiently caches and responds to
- * requests for URLs in the manifest.
- * See https://goo.gl/S9QRab
- */
+workbox.core.clientsClaim();
+
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 workbox.precaching.precacheAndRoute([{url: 'https://use.fontawesome.com/releases/v5.3.1/js/all.js', revision: 'null' }]);
